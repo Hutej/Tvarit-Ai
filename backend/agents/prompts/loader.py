@@ -9,8 +9,11 @@ class PromptLoader:
     """
     Loads prompt templates from the filesystem.
     """
-    def __init__(self, base_dir: str = "agents/prompts"):
-        self.base_dir = Path(base_dir)
+    def __init__(self, base_dir: str = None):
+        if base_dir:
+            self.base_dir = Path(base_dir)
+        else:
+            self.base_dir = Path(__file__).parent
 
     def load_template(self, category: str, template_name: str) -> PromptTemplate:
         """
