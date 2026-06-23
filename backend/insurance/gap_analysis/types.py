@@ -1,0 +1,24 @@
+from enum import Enum
+
+class RiskLevel(str, Enum):
+    LOW = "LOW"
+    MEDIUM = "MEDIUM"
+    HIGH = "HIGH"
+    CRITICAL = "CRITICAL"
+
+class EvidenceCategory(str, Enum):
+    DIAGNOSIS = "DIAGNOSIS"
+    DOCUMENT = "DOCUMENT"
+    CLINICAL_FINDING = "CLINICAL_FINDING"
+    IMAGING = "IMAGING"
+    MEDICATION = "MEDICATION"
+    PROVIDER_TYPE = "PROVIDER_TYPE"
+    CONSERVATIVE_TREATMENT = "CONSERVATIVE_TREATMENT"
+    LAB_RESULT = "LAB_RESULT"
+    INSURANCE = "INSURANCE"
+
+class EvidenceStatus(str, Enum):
+    MATCHED = "MATCHED"
+    MISSING = "MISSING"
+    PARTIAL = "PARTIAL"
+    CONFLICTING = "CONFLICTING"

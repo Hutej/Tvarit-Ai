@@ -1,0 +1,2 @@
+class PromptsConfig:
+    pass

@@ -1,0 +1,13 @@
+# System-wide constants
+
+class DocumentStatus:
+    UPLOADED = "UPLOADED"
+    PROCESSING = "PROCESSING"
+    COMPLETED = "COMPLETED"
+    FAILED = "FAILED"
+
+class AuthorizationStatus:
+    PENDING = "PENDING"
+    VALIDATED = "VALIDATED"
+    MISSING_INFO = "MISSING_INFO"
+    READY_FOR_SUBMISSION = "READY_FOR_SUBMISSION"
