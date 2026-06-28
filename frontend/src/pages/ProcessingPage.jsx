@@ -136,7 +136,7 @@ export default function ProcessingPage() {
           </div>
 
           {/* Divider */}
-          <div className="zinc-separator" />
+          <div className="divider" />
 
           {/* Steps */}
           <div className="space-y-0.5">

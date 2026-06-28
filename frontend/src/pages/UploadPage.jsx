@@ -56,7 +56,7 @@ export default function UploadPage() {
       const uploadResult = await uploadMutation.mutateAsync(file);
       navigate('/processing', {
         state: {
-          documentId: uploadResult.id,
+          documentId: uploadResult.document.id,
           procedureCode: procedure.value,
           procedureName: procedure.label,
         },
@@ -144,7 +144,7 @@ export default function UploadPage() {
           </div>
 
           {/* Divider */}
-          <div className="zinc-separator" />
+          <div className="divider" />
 
           {/* Upload */}
           <div className="space-y-1.5">
